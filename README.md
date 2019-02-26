@@ -10,21 +10,6 @@ In each directory for each experiment `experiment_name` there is:
 2. one directory for the results (`res_[experiment_name]`)
 3. one jupyter notebook visualizing the results (`[experiment_name].ipynb`)
 
-To run experiments you need data in `data` directory:
-* `prepared` - data extracted from raw LOB
-* `data_gdf` - data after applying GDF
-
-The data is prepared from data from raw LOB which you should put in `data/LOB` in format:
-`OrderBookSnapshots_[stock]_[month][day].csv`, for instance `OrderBookSnapshots_9061_1016.csv`.
-
-To prepare data run `$ python prepare_data.py`. For preparing GDF data two steps are required:
-
-1. `$ python gdf_data_preparer_normalizer.py`
-2. `$ python gdf_data_preparer.py` - this may take a while
-
-To see the some visualizations check `stock_overview.ipynb`
-
-
 ## Queue Imbalance
 
 We use **queue imbalance** to predict **mid price indicator**.
@@ -117,6 +102,22 @@ experiment to the notebook you wish to run.
 
 
 ## Running experiments
+
+To run experiments you need data in `data` directory:
+* `prepared` - data extracted from raw LOB
+* `data_gdf` - data after applying GDF
+
+The data is prepared from data from raw LOB which you should put in `data/LOB` in format:
+`OrderBookSnapshots_[stock]_[month][day].csv`, for instance `OrderBookSnapshots_9061_1016.csv`.
+
+To prepare data run `$ python prepare_data.py`. For preparing GDF data two steps are required:
+
+1. `$ python gdf_data_preparer_normalizer.py`
+2. `$ python gdf_data_preparer.py` - this may take a while
+
+To see some data visualizations check `stock_overview.ipynb`.
+
+### Running locally
 
 Make sure you have Python 3.6.
 
