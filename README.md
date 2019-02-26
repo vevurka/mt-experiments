@@ -122,7 +122,7 @@ Make sure you have Python 3.6.
 
 Install lob_data_utils:
 
-`$ cd data_utils; python setup.py install'
+`$ cd data_utils; python setup.py install`
 
 Install requirements:
 
