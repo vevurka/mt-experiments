@@ -121,7 +121,7 @@ To see some data visualizations check `stock_overview.ipynb`.
 
 Make sure you have Python 3.6.
 
-Install lob_data_utils:
+Install package `lob_data_utils` -- (required step to run scripts!):
 
 `$ cd data_utils; python setup.py install`
 
@@ -130,3 +130,19 @@ Install requirements:
 `$ pip install -r requirements.txt`
 
 Make sure you have jupyter-notebook installed if you wish to run the notebooks.
+
+#### Anaconda
+
+If you run Anaconda make sure you have:
+
+* pandas
+* numpy
+* Keras with tensorflow backend
+* sklearn
+
+Do not forget to install `lob_data_utils` provided in `data_utils` directory.
+
+If you want to run notebooks you need:
+
+* seaborn
+* mlxtend 
