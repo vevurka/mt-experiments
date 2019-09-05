@@ -10,6 +10,10 @@ In each directory for each experiment `experiment_name` there is:
 2. one directory for the results (`res_[experiment_name]`)
 3. one jupyter notebook visualizing the results (`[experiment_name].ipynb`)
 
+## Data
+
+Unfortunately the data is not public and I don't have permissions to share it. This repository was one of attachments to my master thesis. I used the data provided by my university. They bought data from here: http://2015.eurofidai.org/en/accueil_en.html. The data I used for this analysis was preprocessed, format of the data can be derived from the code.
+
 ## Queue Imbalance
 
 We use **queue imbalance** to predict **mid price indicator**.
